@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Forms</title>
+</head>
+<body>
+<formaction="http://www.example.com/review.php"method="get">
+<fieldset>
+<legend>Details:</legend>
+<label>
+ Name:
+ <input type ="text"name="name"size="35" maxlength="100">
+ </label>
+ <br />
+ <label>
+ email:
+ <input type="email" name ="email"size="35" maxlength="80">
+ </label>
+ <br />
+ </fieldset>
+ <br/>
+ <fieldset>
+ <legend>Review:</legend>
+ <p>
+ <label for="known-about">
+ how did u known about us?
+ </label>
+ <Select nane="referrer"id="known-about">
+ <option value="google">Google</option>
+ <option value="advert">Advert</option>
+ <option value="other">other</option>
+ </Select>
+ </p>
+ <p>
+ would u visit again?
+ <br />
+ <label>
+ <input type="radio"name="rating"value="yes"/>
+ yes
+ </label>
+ <label>
+ <input type="radio"name="rating"value="no"/>
+ no
+ </label>
+ </p>
+ <p>
+ <label for="comments">
+ comments:
+ </label>
+ <br />
+ <textarea rows="4"cols="40" id="comments"></textarea>
+ </p>
+ <br />
+ <input type="submit"value="submit review"/>
+ </fieldset>
+ </form>
+ </body>
+ </html>
+ 
+ 
